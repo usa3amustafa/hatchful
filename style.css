@@ -301,6 +301,18 @@ header {
   position: relative;
 }
 
+.course-card-img::before {
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  content: 'New';
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 500;
+  background-color: var(--star-gold-clr);
+}
+
 .course-cta {
   display: block;
   padding: 1rem 0;
