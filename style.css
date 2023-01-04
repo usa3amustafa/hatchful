@@ -388,3 +388,75 @@ header {
 .carousel-control.right-btn {
   right: -5%;
 }
+
+/* meet pathways */
+.meet-pathways {
+  margin-bottom: 4rem;
+}
+
+.meet-pathways-title {
+  font-size: 2rem;
+  font-family: var(--yeseva);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.meet-pathways-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.meet-pathways-card {
+  height: 18rem;
+  border-radius: 2rem;
+  width: 100%;
+
+  position: relative;
+}
+
+.meet-pathways-desc {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  max-width: 12ch;
+}
+
+.meet-pathways-card-1 {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(./img/pathways/pathways.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.meet-pathways-card-2 {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(./img/pathways/pathways.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.meet-pathways-card-3 {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(./img/pathways/pathways.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
