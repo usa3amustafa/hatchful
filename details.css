@@ -1,0 +1,401 @@
+.breadcrumb {
+  margin-bottom: 1rem;
+}
+
+.breadcrumbLinks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.breadcrumbLink {
+  display: inline-block;
+  color: var(--grey-clr-3);
+}
+
+.breadcrumbLink.active {
+  color: var(--pri-clr);
+}
+
+.breadcrumbHomeLink {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+/* courseDetails */
+.details {
+  margin-bottom: 4rem;
+}
+.courseDetails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  align-items: stretch;
+}
+
+.courseDetailsVid {
+  background: url('./img/detailsPage/vidImg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  border-radius: 1rem;
+}
+
+.courseDetailsTitle {
+  font-family: var(--montserrat);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.courseDetailsReviews {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+
+.courseDetailsReviewsDesc {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--grey-clr-3);
+}
+
+.courseDetailsReviewsDesc .count {
+  color: var(--pri-clr-op75);
+  font-weight: 600;
+}
+
+.courseDetailsDesc {
+  line-height: 1.6;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.courseDetailsDesc + .courseDetailsDesc {
+  margin-top: 1rem;
+}
+
+.courseDetailsPrice {
+  font-weight: 600;
+  color: var(--sec-clr);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* add quantity controls */
+.addQuantityControls {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  background-color: var(--grey-clr);
+  border-radius: 2rem;
+  font-size: 1.25rem;
+
+  margin-bottom: 1rem;
+}
+
+.addQuantityCount {
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+}
+
+.addQuantityControl {
+  transition: background-color 0.25s ease-in-out;
+}
+
+.addQuantityControl.decrease {
+  padding: 0.75rem 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+.addQuantityControl.increase {
+  padding: 0.75rem 1rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.addQuantityControl:hover {
+  background-color: var(--grey-clr-4);
+  cursor: pointer;
+}
+
+.courseDetailsCta .cta,
+.courseDetailsCta .cta-bg-sec {
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+
+.courseDetailsSecControls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.courseDetailsSecControls .cta-sec {
+  border-bottom: none;
+  font-size: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* faq */
+
+.faq {
+  margin-left: 2rem;
+}
+
+.dropdownIcon {
+  transition: color 0.25ms ease-in-out;
+}
+
+.faqItem:hover .dropdownIcon {
+  cursor: pointer;
+  color: var(--pri-clr-op75);
+}
+
+.faqTitle {
+  border-top: 1px solid var(--grey-clr);
+  padding: 1.25rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: color 0.25ms ease-in-out;
+}
+
+.faqTitle:hover {
+  cursor: pointer;
+}
+
+.faqTitleText {
+  font-size: 1rem;
+  flex: 1;
+
+  position: relative;
+}
+
+.faqItem:hover .faqTitleText {
+  color: var(--pri-clr-op75);
+}
+
+.faqTitleText::before {
+  position: absolute;
+  top: 50%;
+  left: -7%;
+  transform: translateY(-50%);
+}
+
+.faqTitleTextOne::before {
+  content: url(./img/detailsPage/onlineclass.png);
+}
+.faqTitleTextTwo::before {
+  content: url(./img/detailsPage/certificate.png);
+}
+.faqTitleTextThree::before {
+  content: url(./img/detailsPage/searchbook.png);
+}
+.faqTitleTextFour::before {
+  content: url(./img/detailsPage/graduationhat.png);
+}
+
+.faqDesc {
+  height: 0px;
+  overflow: hidden;
+}
+
+.faqItem:last-child .faqTitle {
+  border-bottom: 1px solid var(--grey-clr);
+}
+
+/* classes for faq functionality */
+
+/* when the faqDesc has active class also change the icon class to  fa-chevron-up REACT PART*/
+
+.faqDesc.active {
+  height: auto;
+  padding-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* reviews section */
+.reviews {
+  border-top: 1px solid var(--grey-clr);
+  padding: 2rem 0 6rem 0;
+}
+
+.reviewsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.reviewsHeaderleftColTopbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+
+.reviewsHeaderLeftColText {
+  color: var(--grey-clr-3);
+  font-size: 0.9rem;
+}
+
+.reviewsHeaderLeftColText .count {
+  font-weight: 600;
+}
+
+.reviewsHeaderText {
+  color: var(--link-clr);
+}
+
+.reviewsHeaderTextDesc {
+  color: var(--link-clr);
+  font-weight: 600;
+}
+
+.reviewsHeaderRightCol {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reviewsHeaderRightCol .cta {
+  font-size: 1rem;
+}
+
+.reviewsControls {
+  padding: 1rem 0 0.5rem 0;
+  border-bottom: 1px solid var(--grey-clr);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewsControlsLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reviewsControlLeft {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.reviewsControlLeft.active {
+  font-weight: 700;
+}
+
+.reviewsControlsRight {
+  align-self: flex-end;
+}
+
+.reviewsControlsRightControl {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.reviewsControlsRightControl .dropdown {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.userReviews {
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.userReview {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--grey-clr);
+}
+
+.userReview:last-child {
+  border-bottom: none;
+}
+
+.userReviewTopBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-left: 5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.userReviewInfo {
+  position: relative;
+}
+
+.userReviewInfo::before {
+  content: 'M';
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: -80%;
+  border-radius: 50%;
+  background-color: var(--sec-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.userReviewName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--sec-clr);
+  margin-bottom: 0.5rem;
+}
+
+.userReviewText {
+  margin-left: 5rem;
+  margin-right: 1rem;
+}
+
+.userReviewTitle {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.userReviewDesc {
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.reviewDate {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.alsoBoughtTitle {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
