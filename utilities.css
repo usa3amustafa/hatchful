@@ -9,6 +9,7 @@
   --pri-clr: #293042;
   --pri-clr-op75: rgb(41, 48, 66, 0.75);
   --sec-clr: #42ba98;
+  --sec-clr-op2: rgb(66, 186, 152, 0.2);
   --sec-clr-op8: rgb(66, 186, 152, 0.8);
   --grey-clr: #d9d9d9;
   --grey-clr-2: #a1a1a1;
@@ -18,6 +19,8 @@
   --pink-clr: #ffad9b;
   --pink-clr-op20: rgb(255, 173, 155, 0.3);
   --link-clr: #0e55ff;
+  --green-clr: #126b52;
+  --yellow-clr: #ffd400;
 }
 
 * {
@@ -46,7 +49,7 @@ a {
 }
 
 .container {
-  width: 90%;
+  width: 87.5%;
   max-width: 1530px;
   margin: 0 auto;
 }
@@ -127,6 +130,8 @@ a {
   align-items: flex-end;
   gap: 0.25rem;
 }
+
+/* margins */
 
 /* scrollbar */
 

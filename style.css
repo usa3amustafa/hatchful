@@ -1,4 +1,8 @@
 /* nav top bar */
+.navContainer {
+  width: 95%;
+}
+
 .nav-top {
   position: relative;
 }
@@ -39,10 +43,10 @@
 /* header */
 header {
   background: url('./img/header/header-bg.png');
-  background-size: 40%;
+  background-size: 35%;
   background-repeat: no-repeat;
 
-  min-height: 680px;
+  min-height: 100vh;
   background-position: top right;
   position: relative;
   margin-bottom: 4rem;
