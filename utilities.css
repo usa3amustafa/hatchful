@@ -5,6 +5,7 @@
 
   /* colors */
   --white: #fff;
+  --black-clr-op25: rgba(0, 0, 0, 0.25);
   --pri-clr: #293042;
   --pri-clr-op75: rgb(41, 48, 66, 0.75);
   --sec-clr: #42ba98;
@@ -15,6 +16,7 @@
   --grey-clr-4: #ccc;
   --star-gold-clr: #e2be4b;
   --pink-clr: #ffad9b;
+  --pink-clr-op20: rgb(255, 173, 155, 0.3);
   --link-clr: #0e55ff;
 }
 
@@ -92,6 +94,38 @@ a {
 
 .blank-star {
   color: var(--grey-clr);
+}
+
+/* breadcrumb */
+.breadcrumb {
+  margin-bottom: 1rem;
+}
+
+.breadcrumbLinks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.breadcrumbLink {
+  display: inline-block;
+  color: var(--grey-clr-3);
+}
+
+.breadcrumbLink.active {
+  color: var(--pri-clr);
+}
+
+.breadcrumbHomeLink {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.25rem;
 }
 
 /* scrollbar */
