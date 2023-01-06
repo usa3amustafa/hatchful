@@ -1,0 +1,292 @@
+.courseRegBg {
+  background: url(./img/universityCredits/universityCredits3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  padding: 6rem 0;
+}
+
+.courseReg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 6rem;
+}
+
+.courseRegLeft {
+  position: relative;
+}
+
+.courseRegLeftBtn {
+  background: var(--white);
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: 0;
+}
+
+.courseRegLeftBtn .bold {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.courseRegLeftBtn .fontHeading {
+  font-family: var(--yeseva);
+}
+
+.courseRegRight {
+  color: var(--white);
+}
+
+.courseRegRightTitle {
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+.courseRegRightDesc {
+  line-height: 1.5;
+  position: relative;
+}
+
+.courseRegRightDesc + .courseRegRightDesc {
+  margin-top: 2rem;
+}
+
+.courseRegRightDesc::before {
+  content: url(./img/universityCredits/universityCreditIcon.png);
+
+  position: absolute;
+  left: -7.5%;
+  top: 7.5%;
+}
+
+.courseRegRightDesc .bold {
+  font-weight: 600;
+  display: block;
+}
+
+.courseRegRightDesc .pri-text {
+  color: var(--pri-clr);
+  font-style: italic;
+}
+
+/* credit timeline */
+.creditTimeline {
+  padding: 4rem 0;
+}
+
+.creditTimelineTitle {
+  font-size: 2rem;
+  font-family: var(--yeseva);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--sec-clr);
+  text-align: center;
+  position: relative;
+}
+
+.creditTimelineTitle::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 25%;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: var(--grey-clr);
+}
+
+.creditTimelineDesc {
+  font-style: italic;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.creditTimelineDesc.fullWidth {
+  width: 100%;
+  margin: 0;
+}
+
+/* timeline tables */
+
+.timelineTables {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-bottom: 2rem;
+}
+
+.timelineTable {
+  border: 1px solid var(--grey-clr);
+  border-radius: 2rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-rows: repeat(8, 50px);
+  background-color: var(--white);
+
+  transition: transform 0.1s ease-in-out;
+}
+
+.timelineTable:first-child {
+  font-weight: 500;
+}
+
+.timelineTable:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.timelineTableTitle {
+  font-weight: 700;
+  grid-row: 1/3;
+  height: 50px;
+  font-weight: 900;
+  font-size: 1rem;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  text-transform: capitalize;
+}
+
+.timelineTableTitle.secBg {
+  background-color: var(--sec-clr);
+}
+.timelineTableTitle.priBg {
+  background-color: var(--pri-clr);
+}
+.timelineTableTitle.yellowBg {
+  background-color: var(--yellow-clr);
+}
+
+.timelineTable:nth-child(even) .timelineTableRow:nth-child(even) {
+  background-color: var(--grey-clr-5);
+}
+
+.timelineTableRow {
+  padding: 0.75rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.timelineTableTitle.logo {
+  grid-row: 1/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.timelineTableTitle.logo img {
+  width: 12.5rem;
+}
+
+.timelineTableRow:nth-child(even) {
+  background-color: var(--grey-clr);
+}
+
+.secClr {
+  color: var(--sec-clr);
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* faq */
+
+.faqSection {
+  padding: 4rem 0;
+}
+
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqSectionTitle {
+  font-size: 2rem;
+  font-family: var(--yeseva);
+  color: var(--sec-clr);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.dropdownIcon {
+  transition: color 0.25ms ease-in-out;
+}
+
+.faqItem:hover .dropdownIcon {
+  cursor: pointer;
+  color: var(--pri-clr-op75);
+}
+
+.faqTitle {
+  border-top: 1px solid var(--grey-clr);
+  padding: 1.25rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  transition: color 0.25ms ease-in-out;
+}
+
+.faqTitleLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faqTitle:hover {
+  cursor: pointer;
+}
+
+.faqTitleText {
+  font-size: 1rem;
+  flex: 1;
+  line-height: 1.6;
+  position: relative;
+}
+
+.faqItem:hover .faqTitleText {
+  color: var(--pri-clr-op75);
+}
+
+.faqDesc {
+  height: 0px;
+  overflow: hidden;
+}
+
+.faqItem:last-child .faqTitle {
+  border-bottom: 1px solid var(--grey-clr);
+}
+
+/* classes for faq functionality */
+
+/* when the faqDesc has active class also change the icon class to  fa-chevron-up REACT PART*/
+
+.faqDesc.active {
+  height: auto;
+  padding-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
