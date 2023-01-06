@@ -179,29 +179,20 @@
 }
 
 /* our story */
+
 .ourStory {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  column-gap: 4rem;
+  column-gap: 2rem;
+  padding: 4rem 0;
 }
 
 .ourStoryBg {
   background: url('./img/aboutUs/ourStoryBg.png');
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: left center;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  /* 
-  height: 100%;
-  object-fit: cover; */
-}
-
-.ourStoryText {
-  max-width: 600px;
-  padding: 4rem 0;
-  margin-right: auto;
+  background-size: contain;
+  background-position: right top;
+  border-radius: 2rem;
 }
 
 .ourStoryTitle {

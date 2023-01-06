@@ -122,8 +122,12 @@
 
 /* faq */
 
-.faq {
-  margin-left: 2rem;
+.faqSectionTitle {
+  font-size: 2rem;
+  font-family: var(--yeseva);
+  color: var(--sec-clr);
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .dropdownIcon {
@@ -142,8 +146,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 
   transition: color 0.25ms ease-in-out;
+}
+
+.faqTitleLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faqTitleLeft img {
+  width: 25px;
 }
 
 .faqTitle:hover {
@@ -153,32 +168,12 @@
 .faqTitleText {
   font-size: 1rem;
   flex: 1;
-
+  line-height: 1.6;
   position: relative;
 }
 
-.faqItem:hover .faqTitleText {
+.faqItem:hover .faqTitleLeft {
   color: var(--pri-clr-op75);
-}
-
-.faqTitleText::before {
-  position: absolute;
-  top: 50%;
-  left: -7%;
-  transform: translateY(-50%);
-}
-
-.faqTitleTextOne::before {
-  content: url(./img/detailsPage/onlineclass.png);
-}
-.faqTitleTextTwo::before {
-  content: url(./img/detailsPage/certificate.png);
-}
-.faqTitleTextThree::before {
-  content: url(./img/detailsPage/searchbook.png);
-}
-.faqTitleTextFour::before {
-  content: url(./img/detailsPage/graduationhat.png);
 }
 
 .faqDesc {
@@ -198,8 +193,10 @@
   height: auto;
   padding-bottom: 1rem;
   line-height: 1.6;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 500;
+  margin-left: 3rem;
+  margin-right: 2rem;
 }
 
 /* reviews section */

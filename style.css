@@ -1,6 +1,8 @@
 /* nav top bar */
 .navContainer {
   width: 95%;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .nav-top {
@@ -45,7 +47,6 @@ header {
   background: url('./img/header/header-bg.png');
   background-size: 35%;
   background-repeat: no-repeat;
-
   min-height: 100vh;
   background-position: top right;
   position: relative;
@@ -460,12 +461,18 @@ header {
 }
 
 /* deals of the week */
+.sale {
+  background: url(./img/dealsBg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .deals {
   margin-bottom: 4rem;
 }
 
 .sale {
-  background-color: var(--grey-clr);
   margin-bottom: 2rem;
   border-radius: 2rem;
 
@@ -511,7 +518,7 @@ header {
 }
 
 .timer-el {
-  color: var(--pink-clr);
+  color: var(--pri-clr);
   height: 4rem;
   width: 4rem;
   font-size: 2.5rem;
