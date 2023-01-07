@@ -1,0 +1,106 @@
+footer {
+  background-color: var(--sec-clr);
+}
+
+.footer {
+  padding-top: 6rem;
+}
+
+.footerTop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2rem;
+}
+
+.footerCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.footerColTitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.footerLink {
+  font-size: 0.9rem;
+  color: var(--pri-clr);
+}
+
+.footerColDesc {
+  max-width: 30ch;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.footerColEmail {
+  background-color: var(--white);
+  width: 80%;
+  max-width: 300px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerColEmailInput {
+  font-family: var(--montserrat);
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+
+.footerColEmailInput:focus-visible {
+  outline: none;
+}
+
+.footerColEmailBtn {
+  background-color: var(--white);
+  border: none;
+  padding: 0 1rem;
+  outline: none;
+  cursor: pointer;
+  color: var(--grey-clr-3);
+}
+
+/* footer bottom */
+.footerBottom {
+  padding: 1rem 0;
+  border-top: 1px solid var(--grey-clr);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paymentOptions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.paymentOption {
+  background: var(--grey-clr);
+  border-radius: 5px;
+  height: 30px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paymentOptionImg {
+  max-width: 25px;
+}
+
+.footerBottomText {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--grey-clr);
+}
